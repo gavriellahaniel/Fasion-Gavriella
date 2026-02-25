@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Newsers - Free HTML Magazine Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@100;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div class="container-fluid sticky-top px-0">
+        <div class="container-fluid topbar bg-dark d-none d-lg-block">
+            <div class="container px-0">
+                <div class="topbar-top d-flex justify-content-between flex-lg-wrap">
+                    <div class="top-info flex-grow-0">
+                        <span class="rounded-circle btn-sm-square bg-primary me-2">
+                            <i class="fas fa-bolt text-white"></i>
+                        </span>
+                        <div class="pe-2 me-3 border-end border-white d-flex align-items-center">
+                            <p class="mb-0 text-white fs-6 fw-normal">Trending</p>
+                        </div>
+                        <div class="overflow-hidden" style="width: 735px;">
+                            <div id="note" class="ps-2">
+                                <img src="img/features-fashion.jpg"
+                                    class="img-fluid rounded-circle border border-3 border-primary me-2"
+                                    style="width: 30px; height: 30px;" alt="">
+                                <a href="#">
+                                    <p class="text-white mb-0 link-hover">unique and interesting fashion style from
+                                        different country</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-link flex-lg-wrap">
+                        <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> <span
+                                class="text-body">Tuesday, Sep 12, 2026
+                            </span></i>
+                        <div class="d-flex icon">
+                            <p class="mb-0 text-white me-2">Follow Us:</p>
+                            <a href="" class="me-2"><i class="fab fa-facebook-f text-body link-hover"></i></a>
+                            <a href="" class="me-2"><i class="fab fa-twitter text-body link-hover"></i></a>
+                            <a href="" class="me-2"><i class="fab fa-instagram text-body link-hover"></i></a>
+                            <a href="" class="me-2"><i class="fab fa-youtube text-body link-hover"></i></a>
+                            <a href="" class="me-2"><i class="fab fa-linkedin-in text-body link-hover"></i></a>
+                            <a href="" class="me-2"><i class="fab fa-skype text-body link-hover"></i></a>
+                            <a href="" class=""><i class="fab fa-pinterest-p text-body link-hover"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand mt-3">
+                        <p class="text-primary display-6 mb-2" style="line-height: 0;">NEWSHION</p>
+                        <small class="text-body fw-normal" style="letter-spacing: 12px;">Newsshionupdate</small>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto border-top">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="detail-page.html" class="nav-item nav-link">Detail Page</a>
+
+
+                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                        </div>
+                        <div class="d-flex flex-nowrap border-top pt-3 pt-xl-0">
+                            <div class="d-flex">
+                                <img src="img/weather-icon.png" class="img-fluid w-100 me-2" alt="">
+                                <div class="d-flex align-items-center">
+                                    <strong class="fs-4 text-secondary">30°c</strong>
+                                    <div class="d-flex flex-column ms-2" style="width: 150px;">
+                                        <span class="text-body">JAKARTA,</span>
+                                        <small>Mon, 8 March 2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="btn-search btn border border-primary btn-md-square rounded-circle bg-white my-auto"
+                                data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                                    class="fas fa-search text-primary"></i></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid features mb-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="row g-4 align-items-center features-item">
+                        <div class="col-4">
+                            <div class="rounded-circle position-relative">
+                                <div class="overflow-hidden rounded-circle">
+                                    <img src="img/JAPAN 1.jfif" class="img-zoomin img-fluid rounded-circle w-100"
+                                        alt="">
+                                </div>
+                                <span
+                                    class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                    style="top: 10%; right: -10px;">3</span>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Japan</p>
+                                <a href="japanesse fashion.html" class="h6">
+                                    Japanese fashion is bold and creative, mixing unique street styles with modern
+                                    style.
+                                </a>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> January 21,
+                                    2026 </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="row g-4 align-items-center features-item">
+                        <div class="col-4">
+                            <div class="rounded-circle position-relative">
+                                <div class="overflow-hidden rounded-circle">
+                                    <img src="img/French 1.jpg" class="img-zoomin img-fluid rounded-circle w-100"
+                                        alt="">
+                                </div>
+                                <span
+                                    class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                    style="top: 10%; right: -10px;">3</span>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">France</p>
+                                <a href="french fashion.html" class="h6">
+                                    French fashion is elegant ad simple, known for its timeless and chic look.
+                                </a>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> February 9,
+                                    2026</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="row g-4 align-items-center features-item">
+                        <div class="col-4">
+                            <div class="rounded-circle position-relative">
+                                <div class="overflow-hidden rounded-circle">
+                                    <img src="img/indian 1.jpg" class="img-zoomin img-fluid rounded-circle w-100"
+                                        alt="">
+                                </div>
+                                <span
+                                    class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                    style="top: 10%; right: -10px;">3</span>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">India</p>
+                                <a href="india fashion.html" class="h6">
+                                    Indian fahion is colourful and detailed, blending rich traditions with modern style.
+                                </a>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> March 8,
+                                    2026</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="row g-4 align-items-center features-item">
+                        <div class="col-4">
+                            <div class="rounded-circle position-relative">
+                                <div class="overflow-hidden rounded-circle">
+                                    <img src="img/nigerian 1.jpg" class="img-zoomin img-fluid rounded-circle w-100"
+                                        alt="">
+                                </div>
+                                <span
+                                    class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute"
+                                    style="top: 10%; right: -10px;">3</span>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="features-content d-flex flex-column">
+                                <p class="text-uppercase mb-2">Nigeria</p>
+                                <a href="nigeria fashion.html" class="h6">
+                                    Nigerian fashion is vibrant and expressive, featuring bold patterns and strong
+                                    cultural identity.
+                                </a>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> April 28,
+                                    2026</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Main Post Section Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-7 col-xl-8 mt-0">
+                    <div class="position-relative overflow-hidden rounded">
+                        <img src="img/fashion 1.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+                        <div class="d-flex justify-content-center px-4 position-absolute flex-wrap"
+                            style="bottom: 10px; left: 0;">
+                            <a href="#" class="text-white me-3 link-hover"><i class="fa fa-clock"></i> 08 minute
+                                read</a>
+                            <a href="#" class="text-white me-3 link-hover"><i class="fa fa-eye"></i> 10.0k Views</a>
+                            <a href="#" class="text-white me-3 link-hover"><i class="fa fa-comment-dots"></i> 05
+                                Comment</a>
+                            <a href="#" class="text-white link-hover"><i class="fa fa-arrow-up"></i> 7.5k Share</a>
+                        </div>
+                    </div>
+                    <div class="border-bottom py-3">
+                        <a href="Four Countries Showcasing the World's Most Unique Fashion Style.html"
+                            class="display-4 text-dark mb-0 link-hover">Four Countries Showcasing the World's Most
+                            Unique Fashion Style</a>
+                    </div>
+                    <p class="mt-3 mb-4">Fashion around the world continues to reflect culture, identity, and
+                        creativity, and four countries stand out for their distinctive styles. Japan is known for its
+                        bold and experimental fashion, blending playful streetwear with modern design. France represents
+                        elegance and timeless beauty, focusing on simple yet chic looks. India showcases rich traditions
+                        through colorful fabrics and detailed craftsmanship, while Nigeria highlights vibrant patterns
+                        and expressive designs that celebrate cultural pride. Together, these countries demonstrate how
+                        fashion can tell powerful stories across different cultures.
+                    </p>
+                    <div class="bg-light p-4 rounded">
+                        <div class="news-2">
+                            <h3 class="mb-4">Top Story</h3>
+                        </div>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-md-6">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/top news.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column">
+                                    <a href="Where culture meets creativity, fashion speaks louder than.html" class="h3">Where culture meets creativity, fashion speaks louder than
+                                        words.</a>
+                                    <p class="mb-0 fs-5"><i class="fa fa-clock"> 10 minute read</i> </p>
+                                    <p class="mb-0 fs-5"><i class="fa fa-eye"> 8.0k Views</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xl-4">
+                    <div class="bg-light rounded p-4 pt-0">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/berita 1.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                    <a href="Explore the most exciting fashion trends from around the.html" class="h4 mb-2">Explore the most exciting fashion trends from around the
+                                        world!</a>
+                                    <p class="fs-5 mb-0"><i class="fa fa-clock"> 05 minute read</i> </p>
+                                    <p class="fs-5 mb-0"><i class="fa fa-eye"> 1.2k Views</i></p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-5">
+                                        <div class="overflow-hidden rounded">
+                                            <img src="img/sub news 1.jpg" class="img-zoomin img-fluid rounded w-100"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="features-content d-flex flex-column">
+                                            <a href="Bold designs and fresh trends continue to shape.html" class="h6">Bold designs and fresh trends continue to shape
+                                                today's fashion scene.</a>
+                                            <small><i class="fa fa-clock"> 09 minute read</i> </small>
+                                            <small><i class="fa fa-eye"> 4.0k Views</i></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-5">
+                                        <div class="overflow-hidden rounded">
+                                            <img src="img/sub news 2.jpg" class="img-zoomin img-fluid rounded w-100"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="features-content d-flex flex-column">
+                                            <a href="Fashion evolves through creativity, culture, and.html" class="h6">Fashion evolves through creativity, culture, and
+                                                modern influences.</a>
+                                            <small><i class="fa fa-clock"> 07 minute read</i> </small>
+                                            <small><i class="fa fa-eye"> 2.9k Views</i></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-5">
+                                        <div class="overflow-hidden rounded">
+                                            <img src="img/sub news 3.jpg" class="img-zoomin img-fluid rounded w-100"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="features-content d-flex flex-column">
+                                            <a href="New styles are redefining how people express.html" class="h6">New styles are redefining how people express
+                                                themselves through fashion.</a>
+                                            <small><i class="fa fa-clock"> 09 minute read</i> </small>
+                                            <small><i class="fa fa-eye"> 6.0k Views</i></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-5">
+                                        <div class="overflow-hidden rounded">
+                                            <img src="img/sub news 4.jpg" class="img-zoomin img-fluid rounded w-100"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="features-content d-flex flex-column">
+                                            <a href="From Streetwear to elegance, fashion trends keep.html" class="h6">From Streetwear to elegance, fashion trends keep
+                                                transforming globally.</a>
+                                            <small><i class="fa fa-clock"> 02 minute read</i> </small>
+                                            <small><i class="fa fa-eye"> 4.4k Views</i></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-5">
+                                        <div class="overflow-hidden rounded">
+                                            <img src="img/sub news 5.jpg" class="img-zoomin img-fluid rounded w-100"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="features-content d-flex flex-column">
+                                            <a href="Innovative looks and unique designs dominate the.html" class="h6">Innovative looks and unique designs dominate the
+                                                latest fashion news.</a>
+                                            <small><i class="fa fa-clock"> 07 minute read</i> </small>
+                                            <small><i class="fa fa-eye"> 1.8k Views</i></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-5">
+                                        <div class="overflow-hidden rounded">
+                                            <img src="img/sub news 6.jpg" class="img-zoomin img-fluid rounded w-100"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="features-content d-flex flex-column">
+                                            <a href="Fashion today reflects individuality, confidence, and.html" class="h6">Fashion today reflects individuality, confidence, and
+                                                artistic expression.</a>
+                                            <small><i class="fa fa-clock"> 08 minute read</i> </small>
+                                            <small><i class="fa fa-eye"> 2.8k Views</i></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Post Section End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5 my-5"
+        style="background: linear-gradient(rgba(202, 203, 185, 1), rgba(202, 203, 185, 1));">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="mb-4 text-primary">Newsers</h1>
+                    <h1 class="mb-4">Get Every Weekly Updates</h1>
+                    <p class="text-dark mb-4 pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley
+                    </p>
+                    <div class="position-relative mx-auto">
+                        <input class="form-control w-100 py-3 rounded-pill" type="email"
+                            placeholder="Your Busines Email">
+                        <button type="submit"
+                            class="btn btn-primary py-3 px-5 position-absolute rounded-pill text-white h-100"
+                            style="top: 0; right: 0;">Subscribe Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="rounded">
+                        <img src="img/banner-img.jpg" class="img-fluid rounded w-100 rounded" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Latest News Start -->
+    <div class="container-fluid latest-news py-5">
+        <div class="container py-5">
+            <h2 class="mb-4">Latest News</h2>
+            <div class="latest-news-carousel owl-carousel">
+                <div class="latest-news-item">
+                    <div class="bg-light rounded">
+                        <div class="rounded-top overflow-hidden">
+                            <img src="img/lastest 1.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="d-flex flex-column p-4">
+                            <a href="latest 1.html" class="h4">Changing Trends Reflect Shifts in modern society</a>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="small text-body link-hover">by Willum Skeem</a>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-news-item">
+                    <div class="bg-light rounded">
+                        <div class="rounded-top overflow-hidden">
+                            <img src="img/lastest 2.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="d-flex flex-column p-4">
+                            <a href="latest 2.html" class="h4">Innovation and sustainability gain attention in today’s industry</a>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="small text-body link-hover">by Willum Skeem</a>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-news-item">
+                    <div class="bg-light rounded">
+                        <div class="rounded-top overflow-hidden">
+                            <img src="img/latest 3.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="d-flex flex-column p-4">
+                            <a href="latest 3.html" class="h4">Creative industries continue to influence daily lifestyle</a>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="small text-body link-hover">by Willum Skeem</a>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-news-item">
+                    <div class="bg-light rounded">
+                        <div class="rounded-top overflow-hidden">
+                            <img src="img/latset 4.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="d-flex flex-column p-4">
+                            <a href="latest 4.html" class="h4">Public awareness drives new direction in modern Development</a>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="small text-body link-hover">by Willum Skeem</a>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-news-item">
+                    <div class="bg-light rounded">
+                        <div class="rounded-top overflow-hidden">
+                            <img src="img/latset 5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="d-flex flex-column p-4">
+                            <a href="latest 5.html" class="h4 ">Global perspective shape the future of contemporary culture</a>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="small text-body link-hover">by Willum Skeem</a>
+                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9,
+                                    2024</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest News End -->
+
+
+    <!-- Most Populer News Start -->
+
+
+
+
+
+    <div class="col-lg-12">
+        <div class="position-relative banner-2">
+            <img src="img/bg fashion.jpg" class="img-fluid w-100 rounded" alt="">
+            <div class="text-center banner-content-2">
+                <h6 class="mb-2">The Most Populer</h6>
+                <p class="text-white mb-2">New Fashion Trends</p>
+                <a href="#" class="btn btn-primary text-white px-4">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Most Populer News End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer py-5">
+        <div class="container py-5">
+            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <a href="#" class="d-flex flex-column flex-wrap">
+                            <p class="text-white mb-0 display-6">NEWSHION</p>
+                            <small class="text-light"
+                                style="letter-spacing: 11px; line-height: 0;">Newsshionupdate</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="d-flex position-relative rounded-pill overflow-hidden">
+                            <input class="form-control border-0 w-100 py-3 rounded-pill" type="email"
+                                placeholder="example@gmail.com">
+                            <button type="submit"
+                                class="btn btn-primary border-0 py-3 px-5 rounded-pill text-white position-absolute"
+                                style="top: 0; right: 0;">Subscribe Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 col-xl-3">
+                    <div class="footer-item-1">
+                        <h4 class="mb-4 text-white">Get In Touch</h4>
+                        <p class="text-secondary line-h">Address: <span class="text-white">Pandon Streat, New
+                                York</span></p>
+                        <p class="text-secondary line-h">Email: <span class="text-white">someones@gmail.com</span></p>
+                        <p class="text-secondary line-h">Phone: <span class="text-white">+083 346 442</span></p>
+                        <div class="d-flex line-h">
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-twitter text-dark"></i></a>
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-facebook-f text-dark"></i></a>
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-youtube text-dark"></i></a>
+                            <a class="btn btn-light btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-linkedin-in text-dark"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="footer-item-2">
+                        <div class="d-flex flex-column mb-4">
+                            <h4 class="mb-4 text-white">Recent Posts</h4>
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle border border-2 border-primary overflow-hidden">
+                                        <img src="img/french 2.jpg" class="img-zoomin img-fluid rounded-circle w-100"
+                                            alt="">
+                                    </div>
+                                    <div class="d-flex flex-column ps-4">
+                                        <p class="text-uppercase text-white mb-3">Fashion</p>
+                                        <a href="#" class="h6 text-white">
+                                            French fashion is elegant ad simple, known for its timeless and chic look.
+                                        </a>
+                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec
+                                            9, 2024</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle border border-2 border-primary overflow-hidden">
+                                        <img src="img/japan 2.jpg" class="img-zoominimg-fluid rounded-circle w-100"
+                                            alt="">
+                                    </div>
+                                    <div class="d-flex flex-column ps-4">
+                                        <p class="text-uppercase text-white mb-3">Style</p>
+                                        <a href="#" class="h6 text-white">
+                                            Japanese fashion is bold and creative, mixing unique street styles with
+                                            modern style.
+                                        </a>
+                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec
+                                            9, 2024</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="d-flex flex-column text-start footer-item-3">
+                        <h4 class="mb-4 text-white">Categories</h4>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Sports</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Magazine</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Lifestyle</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Politician</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Technology</a>
+                        <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i>
+                            Intertainment</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="footer-item-4">
+                        <h4 class="mb-4 text-white">Our Gallary</h4>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/galery1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/galery2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/galery3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/galery4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/galery5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/galery6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Newshion</a>,
+                        All right reserved.</span>
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-end text-white">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">Gavriella.H.K.</a><a
+                        href="https://themewagon.com"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-2 border-white rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
